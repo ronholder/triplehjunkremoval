@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Triple H Junk Removal</title>
+    <style>
+        /* [COPIED CSS FROM INDEX] */
+        :root { --yellow: #f4d03f; --black: #000000; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial Black', sans-serif; margin: 0; background-color: var(--yellow); color: var(--black); }
+        nav { background-color: var(--black); padding: 15px 0; display: flex; justify-content: center; align-items: center; position: sticky; top: 0; min-height: 75px; }
+        .nav-links { display: flex; gap: 20px; }
+        nav a { color: var(--yellow); text-decoration: none; text-transform: uppercase; font-size: 0.95rem; font-weight: bold; padding: 8px 12px; }
+        .nav-logo { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
+        .nav-logo img { height: 50px; }
+        header { background-color: var(--black); color: var(--yellow); padding: 3rem 1rem; text-align: center; text-transform: uppercase; }
+
+        .content { max-width: 600px; margin: auto; padding: 40px 20px; }
+        input, textarea { width: 100%; padding: 15px; border: 4px solid var(--black); font-family: 'Arial Black'; margin-bottom: 15px; }
+        button { width: 100%; background: var(--black); color: var(--yellow); padding: 20px; border: none; font-size: 1.5rem; cursor: pointer; text-transform: uppercase; }
+        .text-option { text-align: center; margin-top: 30px; font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+        <div class="nav-logo"><a href="index.html"><img src="logo.png" alt="Triple H Logo"></a></div>
+    </nav>
+    <header><h1>GET A QUOTE</h1></header>
+    <div class="content">
+        <form action="https://formspree.io/f/your-id-here" method="POST">
+            <input type="text" name="name" placeholder="YOUR NAME" required>
+            <input type="tel" name="phone" placeholder="PHONE NUMBER" required>
+            <textarea name="message" rows="4" placeholder="WHAT DO YOU NEED REMOVED?"></textarea>
+            <button type="submit">SEND REQUEST</button>
+        </form>
+        <div class="text-option">OR TEXT A PHOTO TO:<br><strong>289-996-2081</strong></div>
+    </div>
+</body>
+</html>
