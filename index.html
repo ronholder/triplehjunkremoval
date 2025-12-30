@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple H Junk Removal Inc.Home </title>
+    <style>
+        :root { --yellow: #f4d03f; --black: #000000; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Arial Black', sans-serif; margin: 0; background-color: var(--yellow); color: var(--black); line-height: 1.4; }
+        
+        /* SHARED NAV */
+        nav { background-color: var(--black); padding: 15px 0; display: flex; justify-content: center; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--black); min-height: 75px; }
+        .nav-links { display: flex; gap: 20px; }
+        nav a { color: var(--yellow); text-decoration: none; text-transform: uppercase; font-size: 0.95rem; font-weight: bold; padding: 8px 12px; border: 2px solid transparent; transition: 0.3s; }
+        nav a:hover { border: 2px solid var(--yellow); }
+        .nav-logo { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
+        .nav-logo img { height: 50px; width: auto; display: block; }
+
+        header { background-color: var(--black); color: var(--yellow); padding: 4rem 1rem; text-align: center; text-transform: uppercase; border-bottom: 10px solid var(--black); }
+        header h1 { font-size: 3.5rem; margin: 0; }
+        
+        .container { text-align: center; padding: 60px 20px; max-width: 1000px; margin: auto; }
+        .hero-h2 { font-size: 4rem; margin: 0; text-transform: uppercase; }
+        .phone-box { display: block; font-size: 4rem; color: var(--black); text-decoration: none; margin: 30px 0; border: 8px solid var(--black); padding: 15px; transition: 0.3s; }
+        .phone-box:hover { background: var(--black); color: var(--yellow); }
+        .banner { background: var(--black); color: var(--yellow); padding: 25px; font-size: 1.6rem; text-transform: uppercase; margin-top: 50px; border: 4px dashed var(--yellow); }
+
+        @media (max-width: 900px) {
+            nav { flex-direction: column; position: relative; }
+            .nav-logo { position: static; transform: none; margin-bottom: 15px; }
+            header h1 { font-size: 2.2rem; }
+            .hero-h2 { font-size: 2.5rem; }
+            .phone-box { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="nav-logo"><a href="index.html"><img src="logo.png" alt="Triple H Logo"></a></div>
+    </nav>
+    <header><h1>TRIPLE H JUNK REMOVAL</h1><p>Professional • Reliable • Locally Owned</p></header>
+    <div class="container">
+        <h2 class="hero-h2">RECLAIM YOUR SPACE</h2>
+        <p style="font-size: 1.4rem; font-weight: bold;">Durham Region's Choice for Junk Removal</p>
+        <a href="tel:2899962081" class="phone-box">289-996-2081</a>
+        <div class="banner">The Triple H Standard: <strong>Broom-Clean Finish</strong></div>
+    </div>
+</body>
+</html>
